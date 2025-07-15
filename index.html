@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recipe Finder</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="min-h-screen">
+        <header class="gradient-bg text-white py-6 shadow-md">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="flex items-center mb-4 md:mb-0">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Recipe Finder Logo" class="w-12 h-12 mr-3">
+                        <h1 class="text-2xl font-bold">PantryPal</h1>
+                </div>
+                <p class="text-center md:text-right text-white/90">Discover delicious recipes with what you have!</p>
+            </div>
+            </div>
+        </header>
+
+        <!-- Main Content-->
+        <main class="container mx-auto px-4 py-8">
+            <section class="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-semibold mb-6 text-gray-800">Find Recipes with Your Ingredients</h2>
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="flex-grow relative">
+                        <input type="text" id="ingredientInput" placeholder="Enter ingredients (comma-separated)" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <button id="addIngredientBtn" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                            <i class="fas fa-plus"></i> 
+                            </button>
+                    </div>
+                    <button id="findRecipesBtn" class="gradient-bg text-white font-semibold py-4 pc-6 rounded-lg hover:opacity-90 transition-opacity"> Find Recipes</button>
+                </div>
+
+                <!--Selected Ingredients-->
+                <div id="selectedIngradients" class="mt-4 flex flex-wrap"></div>
+          </section>
+           
+    </body>
+</html>
